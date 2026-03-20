@@ -1,4 +1,4 @@
-package an.awesome.pipelinr;
+package bot.ilda.adapters.async;
 
 class Preconditions {
 

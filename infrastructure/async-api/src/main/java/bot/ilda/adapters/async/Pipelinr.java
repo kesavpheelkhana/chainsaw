@@ -1,6 +1,6 @@
-package an.awesome.pipelinr;
+package bot.ilda.adapters.async;
 
-import static an.awesome.pipelinr.Preconditions.checkArgument;
+import static bot.ilda.adapters.async.Preconditions.checkArgument;
 import static java.util.stream.Collectors.toList;
 
 import java.util.List;
@@ -61,6 +61,7 @@ public class Pipelinr implements Pipeline {
 
   public <R, C extends Command<R>> R send(C command) {
     checkArgument(command, "Command must not be null");
+      System.out.println("sending command "+command);
 
     Command.Middleware.Next<R> handleCommand = new HandleCommand<>(command);
     return commandMiddlewares
@@ -108,6 +109,7 @@ public class Pipelinr implements Pipeline {
     @Override
     public R invoke() {
       Command.Handler<C, R> handler = router.route(command);
+        System.out.println("invoke command "+command);
       return handler.handle(command);
     }
   }

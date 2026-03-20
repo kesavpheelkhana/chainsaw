@@ -1,6 +1,5 @@
-package bot.ilda.adapters.output;
+package bot.ilda.adapters.jpa.output;
 
-import bot.ilda.CityRepository;
 import bot.ilda.application.ports.output.CityManagementOutputPort;
 import bot.ilda.domain.model.City;
 import bot.ilda.domain.vo.Id;

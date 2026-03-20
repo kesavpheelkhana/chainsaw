@@ -1,4 +1,4 @@
-package an.awesome.pipelinr;
+package bot.ilda.adapters.async;
 
 import java.util.Collection;
 import java.util.List;

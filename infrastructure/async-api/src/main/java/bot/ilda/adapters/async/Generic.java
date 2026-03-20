@@ -1,4 +1,4 @@
-package an.awesome.pipelinr;
+package bot.ilda.adapters.async;
 
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
