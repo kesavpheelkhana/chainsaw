@@ -1,15 +1,15 @@
-package bot.ilda.application.usecases;
+package bot.ilda.application.ports.output;
 
 import bot.ilda.domain.model.City;
 import bot.ilda.domain.vo.Id;
-import bot.ilda.domain.vo.State;
 
 import java.util.Optional;
 
+public interface CityManagementOutputPort {
 
-public interface CityManagementUseCase {
-    City createCity(String name, State state);
     Optional<City> retrieveCity(Id id);
 
     Optional<City> removeCity(Id id);
+
+    City saveCity(City city);
 }

@@ -6,10 +6,10 @@
 	    <groupId>bot.ilda</groupId>
 	    <artifactId>chainsaw</artifactId>
 	    <version>0.0.1-SNAPSHOT</version>
-	    <relativePath>../pom.xml</relativePath>
+	    <relativePath>../../pom.xml</relativePath>
 	</parent>
-	<artifactId>bootstrap</artifactId>
-	<name>Bootstrap</name>
+	<artifactId>rest-api</artifactId>
+	<name>Rest API</name>
 	<description/>
 	<url/>
 	<licenses>
@@ -30,31 +30,24 @@
 	<dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>rest-api</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
             <artifactId>application</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
 	</dependencies>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<excludes>
-						<exclude>
-							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
-						</exclude>
-					</excludes>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+
 
 </project>

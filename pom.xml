@@ -20,6 +20,8 @@
 		<module>bootstrap</module>
         <module>domain</module>
 		<module>infrastructure/async-api</module>
+        <module>infrastructure/rest-api</module>
+        <module>infrastructure/datasource-mysql</module>
 	</modules>
 	
 	<url/>

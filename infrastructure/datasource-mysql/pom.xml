@@ -6,10 +6,10 @@
 	    <groupId>bot.ilda</groupId>
 	    <artifactId>chainsaw</artifactId>
 	    <version>0.0.1-SNAPSHOT</version>
-	    <relativePath>../pom.xml</relativePath>
+	    <relativePath>../../pom.xml</relativePath>
 	</parent>
-	<artifactId>bootstrap</artifactId>
-	<name>Bootstrap</name>
+	<artifactId>datasource-mysql</artifactId>
+	<name>MYSQL API</name>
 	<description/>
 	<url/>
 	<licenses>
@@ -30,7 +30,7 @@
 	<dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>rest-api</artifactId>
+            <artifactId>domain</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -40,21 +40,6 @@
         </dependency>
 	</dependencies>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<excludes>
-						<exclude>
-							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
-						</exclude>
-					</excludes>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+
 
 </project>
