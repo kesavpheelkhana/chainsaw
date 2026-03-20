@@ -1,7 +1,7 @@
 package bot.ilda.application.ports.input.command;
 
-import bot.ilda.adapters.async.Command;
 import bot.ilda.application.ports.output.command.ColorResponse;
+import bot.ilda.infra.adapters.async.Command;
 import lombok.Getter;
 
 @Getter
